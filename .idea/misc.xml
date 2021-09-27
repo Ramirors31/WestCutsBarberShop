@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ramir/Documents/9Semestre/DispMoviles/ProyectoMC/ProyectoMedioCurso/app/src/main/res/layout/fragment_blank.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ramir/Documents/9Semestre/DispMoviles/ProyectoMC/ProyectoMedioCurso/app/src/main/res/layout/fragment_store.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/ramir/Documents/9Semestre/DispMoviles/ProyectoMC/ProyectoMedioCurso/app/src/main/res/layout/store_item.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

@@ -15,11 +15,7 @@ import com.example.westcutsbarbershop.data.Store
  * create an instance of this fragment.
  */
 class HomeFragment : Fragment() {
-    var product: List<Store> = listOf(
-        Store("Minoxidil", 150, "Frasco con 200ml","Imagen"),
-        Store("Shampoo", 50, "Frasco con 100ml", "Imagen"),
-        Store("Tinte", 100, "Tinte color Rojo", "Imagen")
-    )
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
