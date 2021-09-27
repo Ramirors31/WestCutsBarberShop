@@ -31,8 +31,6 @@
             android:layout_height="wrap_content"
             tools:text = "Frasco con 200ml"/>
 
-
-
     </LinearLayout>
 
 

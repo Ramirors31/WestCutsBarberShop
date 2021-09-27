@@ -14,4 +14,25 @@
     <string name="price_product4">250</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="bienvenidos">Bienvenidos a Barbershop</string>
+    <string name="msj_informacion">Esta aplicación es para:</string>
+    <string name="part1">+ Conocer nuestros servicios </string>
+    <string name="part2">+ Agendar cita para corte </string>
+
+    <string name="Citas">Citas</string>
+    <string name="nombre">Nombre</string>
+    <string name="hora">Horario</string>
+    <string name="Fecha">Fecha</string>
+    <string name="sucursal">Sucursal</string>
+    <string name="Aceptar">Agendar</string>
+
+    <string name="servicios">Servicios</string>
+    <string name="corteNormal">Corte normal</string>
+    <string name="corteUrbano">Corte urbano</string>
+    <string name="corteFiguras">Figuras</string>
+    <string name="barba">Barba</string>
+    <string name="mascarrillas">Mascarrillas</string>
+    <string name="venta">Venta de ceras</string>
+    <string name="tel">Telefono: </string>
 </resources>

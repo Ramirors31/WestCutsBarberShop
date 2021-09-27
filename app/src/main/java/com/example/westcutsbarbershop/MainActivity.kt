@@ -7,6 +7,8 @@ import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.Theme_WestCutsBarberShop)
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val invitado: Button = findViewById(R.id.invitadoButton)
