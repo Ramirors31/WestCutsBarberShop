@@ -4,27 +4,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.StoreFragment"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    tools:context=".fragments.BarbersFragment">
     <TextView
-        android:id="@+id/storeText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="24dp"
-        android:text="A La Venta"
-        android:gravity="center"
+        android:text="Nuestros Barberos"
         android:textColor="#000"
-
+        android:gravity="center"
         />
 
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewStore"
+        android:id="@+id/barbersRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
         android:scrollbars="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-         />
+
+        />
 
 </LinearLayout>

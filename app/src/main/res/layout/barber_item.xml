@@ -3,47 +3,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:layout_marginTop="10dp">
 
-    <ImageView
-        android:id="@+id/productImage"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        tools:src="@drawable/minoxidil"
-        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        tools:src="@drawable/juanignacio"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="1dp"
+     />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:orientation="vertical">
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp">
         <TextView
-            android:id="@+id/productName"
+            android:id="@+id/barberName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:textColor="#000"
-            tools:text = "Minoxidil"/>
+            tools:text="Juan Ignacio"/>
         <TextView
-            android:id="@+id/productPrice"
-            android:textColor="#000"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            tools:text = "150" />
-        <TextView
-            android:id="@+id/productDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:textColor="#000"
-            tools:text = "Frasco con 200ml"/>
-        <TextView
-            android:id="@+id/productDisponibilidad"
+            android:id="@+id/barberDays"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#000"
-            android:textSize="20dp"
-            tools:text = "Disponible en tienda"/>
+            tools:text="Dias: Lunes- Sabado"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/barberHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            tools:text="Horario: 11:00 am - 8:00 pm"
+            android:textSize="20dp"/>
     </LinearLayout>
 
 

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.example.westcutsbarbershop.fragments.BarbersFragment
 import com.example.westcutsbarbershop.fragments.HomeFragment
 import com.example.westcutsbarbershop.fragments.ServicesFragment
 import com.example.westcutsbarbershop.fragments.StoreFragment
@@ -16,6 +17,7 @@ class HomeActivity : AppCompatActivity() {
     private val homeFragment = HomeFragment()
     private val storeFragment = StoreFragment()
     private val servicesFragment = ServicesFragment()
+    private val barbersFragment = BarbersFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,8 +27,10 @@ class HomeActivity : AppCompatActivity() {
         bottomNavigationMenu.setOnNavigationItemReselectedListener {
             when(it.itemId){
                 R.id.HomeButton->replaceFragment(homeFragment)
+                R.id.BarbersButton->replaceFragment(barbersFragment)
                 R.id.StoreButton->replaceFragment(storeFragment)
                 R.id.ServicesButton->replaceFragment(servicesFragment)
+
             }
             true
         }

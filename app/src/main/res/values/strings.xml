@@ -1,4 +1,6 @@
 <resources>
+
+    <!--STORE STRINGS -->
     <string name="app_name">West Cuts Barber Shop</string>
     <string name="shop_product1">Minoxidil</string>
     <string name="shop_product2">Shampoo</string>
@@ -12,8 +14,22 @@
     <string name="price_product2">200</string>
     <string name="price_product3">80</string>
     <string name="price_product4">250</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="disponibilidad_product1">Disponible en tienda</string>
+    <string name="disponibilidad_product2">Disponible en tienda</string>
+    <string name="disponibilidad_product3">Producto Agotado</string>
+    <string name="disponibilidad_product4">Disponible en tienda</string>
+
+    <!-- BARBERS STRINGS -->
+    <string name="name_barber1">Juan Ignacio</string>
+    <string name="name_barber2">Ernesto Yair</string>
+    <string name="name_barber3">José Israel</string>
+    <string name="name_barber4">Luis Alonso</string>
+    <string name="days_barber1">Lunes - Sabado</string>
+    <string name="days_barber2">Martes - Domingo</string>
+    <string name="days_barber3">Martes-Domingo</string>
+    <string name="days_barber4">Lunes- Sabado</string>
+    <string name="hours_barber">11:00am - 8:00 pm</string>
+
 
     <string name="bienvenidos">Bienvenidos a Barbershop</string>
     <string name="msj_informacion">Esta aplicación es para:</string>
@@ -35,4 +51,6 @@
     <string name="mascarrillas">Mascarrillas</string>
     <string name="venta">Venta de ceras</string>
     <string name="tel">Telefono: </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

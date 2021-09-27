@@ -20,6 +20,7 @@ class StoreAdapter (
         val productDescp: TextView = view.findViewById(R.id.productDescription)
         val productPrice : TextView = view.findViewById(R.id.productPrice)
         val productImage : ImageView = view.findViewById(R.id.productImage)
+        val productDisp: TextView = view.findViewById(R.id.productDisponibilidad)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): itemViewHolder {
@@ -34,6 +35,7 @@ class StoreAdapter (
         holder.productDescp.text = context.resources.getString(item.descriptionResourceId)
         holder.productPrice.text = context.resources.getString(item.priceResourceId)
         holder.productImage.setImageResource(item.imageResourceId)
+        holder.productDisp.text = context.resources.getString(item.disponibilidadResourceId)
     }
 
     override fun getItemCount() = dataset.size

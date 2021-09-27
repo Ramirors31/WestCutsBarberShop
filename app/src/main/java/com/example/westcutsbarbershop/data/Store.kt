@@ -9,5 +9,6 @@ data class Store(
     @StringRes val productResourceId: Int,
     @StringRes val descriptionResourceId: Int,
     @StringRes val priceResourceId: Int,
-    @DrawableRes val imageResourceId: Int
+    @DrawableRes val imageResourceId: Int,
+    @StringRes val disponibilidadResourceId: Int
 )
