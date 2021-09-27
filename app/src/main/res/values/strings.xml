@@ -20,11 +20,11 @@
     <string name="part1">+ Conocer nuestros servicios </string>
     <string name="part2">+ Agendar cita para corte </string>
 
-    <string name="Citas">Citas</string>
+    <string name="Citas">Agenda tu servicio</string>
     <string name="nombre">Nombre</string>
     <string name="hora">Horario</string>
     <string name="Fecha">Fecha</string>
-    <string name="sucursal">Sucursal</string>
+    <string name="sucursal">Elige un barbero</string>
     <string name="Aceptar">Agendar</string>
 
     <string name="servicios">Servicios</string>

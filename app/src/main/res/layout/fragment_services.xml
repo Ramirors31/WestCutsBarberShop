@@ -35,7 +35,7 @@
         android:layout_width="347dp"
         android:layout_height="52dp"
         android:layout_marginStart="145dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="145dp"
         android:text="@string/Aceptar"
         android:textSize="20sp"
@@ -201,6 +201,16 @@
         app:layout_constraintStart_toEndOf="@+id/checkB_barba"
         app:layout_constraintTop_toBottomOf="@+id/checkB_urbano" />
 
+    <TextView
+        android:id="@+id/txt_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="76dp"
+        android:text="Total"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkB_figuras" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
