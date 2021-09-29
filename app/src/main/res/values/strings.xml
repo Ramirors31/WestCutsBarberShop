@@ -42,6 +42,7 @@
     <string name="Fecha">Fecha</string>
     <string name="sucursal">Elige un barbero</string>
     <string name="Aceptar">Agendar</string>
+    <string name="total">Total: $</string>
 
     <string name="servicios">Servicios</string>
     <string name="corteNormal">Corte normal</string>

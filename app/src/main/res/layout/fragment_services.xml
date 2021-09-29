@@ -202,5 +202,16 @@
         app:layout_constraintStart_toEndOf="@+id/ck_barba"
         app:layout_constraintTop_toBottomOf="@+id/ck_urbano" />
 
+    <TextView
+        android:id="@+id/txt_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="49dp"
+        android:text="@string/total"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ck_figuras" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
