@@ -160,7 +160,6 @@
         android:layout_marginTop="7dp"
         android:text="@string/corteNormal"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="onCheckboxClicked"
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
     <CheckBox
@@ -171,7 +170,6 @@
         android:layout_marginTop="47dp"
         android:text="@string/corteUrbano"
         app:layout_constraintStart_toEndOf="@+id/ck_normal"
-        android:onClick="onCheckboxClicked"
         app:layout_constraintTop_toBottomOf="@+id/edit_fecha" />
 
     <CheckBox
@@ -182,7 +180,6 @@
         android:layout_marginTop="50dp"
         android:text="@string/corteFiguras"
         app:layout_constraintStart_toEndOf="@+id/ck_urbano"
-        android:onClick="onCheckboxClicked"
         app:layout_constraintTop_toBottomOf="@+id/edit_hora" />
 
     <CheckBox
@@ -193,7 +190,6 @@
         android:layout_marginTop="18dp"
         android:text="@string/barba"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="onCheckboxClicked"
         app:layout_constraintTop_toBottomOf="@+id/ck_normal" />
 
     <CheckBox
@@ -204,7 +200,6 @@
         android:layout_marginTop="18dp"
         android:text="@string/mascarrillas"
         app:layout_constraintStart_toEndOf="@+id/ck_barba"
-        android:onClick="onCheckboxClicked"
         app:layout_constraintTop_toBottomOf="@+id/ck_urbano" />
 
 
