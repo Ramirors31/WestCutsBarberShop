@@ -120,6 +120,7 @@
 
     <Spinner
         android:id="@+id/spinner_barberos"
+        android:hint="Juan Ignacio"
         android:layout_width="350dp"
         android:layout_height="30dp"
         android:layout_marginStart="23dp"

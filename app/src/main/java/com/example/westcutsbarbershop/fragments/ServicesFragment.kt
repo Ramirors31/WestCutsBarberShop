@@ -24,13 +24,19 @@ class ServicesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val spinner = findViewById<Spinner>(R.id.spinner_barberos)
+        val rootView =inflater.inflate(R.layout.fragment_services, container, false)
+
+        val spinner:Spinner =rootView.findViewById<Spinner>(R.id.spinner_barberos)
         val lista = resources.getStringArray(R.array.opciones)
-        val adaptador = ArrayAdapter(this,android.R.layout.simple_spinner_item, lista)
+        val adaptador = ArrayAdapter<String>(spinner.context, android.R.layout.simple_spinner_item,lista)
         spinner.adapter = adaptador
-        return inflater.inflate(R.layout.fragment_services, container, false)
+        return rootView
+
+
 
     }
+
+
 
 
 }
