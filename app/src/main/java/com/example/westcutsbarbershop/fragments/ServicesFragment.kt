@@ -1,6 +1,7 @@
 package com.example.westcutsbarbershop.fragments
 
 import android.app.DatePickerDialog
+import android.app.TimePickerDialog
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
@@ -54,18 +55,45 @@ class ServicesFragment : Fragment() {
             myCalendar.get(Calendar.MONTH),
             myCalendar.get(Calendar.DAY_OF_MONTH)).show()
         }
+
+        //TIME PICKER PARA HORA DE CITA
+        val editHora: EditText = rootView.findViewById<EditText>(R.id.edit_hora)
+        val timePicker = TimePickerDialog.OnTimeSetListener{view,hour,minute ->
+            myCalendar.set(Calendar.HOUR_OF_DAY,hour)
+            myCalendar.set(Calendar.MINUTE, minute)
+            updateTimeLabel(myCalendar, editHora)
+        }
+
+        editHora.setOnClickListener{
+            TimePickerDialog(editHora.context,timePicker,
+            myCalendar.get(Calendar.HOUR_OF_DAY),
+            myCalendar.get(Calendar.MINUTE),
+                false).show()
+        }
+
+
+
+
+
         //NOTIFICACION DE SERVICIO AGENDADO
         val sendButton:Button = rootView.findViewById<Button>(R.id.btn_agendar)
         sendButton.setOnClickListener {
             val message = "Se ha agendado tu servicio"
             Toast.makeText(sendButton.context, message, Toast.LENGTH_SHORT).show()
         }
-        
+
         return rootView
 
     }
 
-     private fun updateLabel(myCalendar: Calendar,editFecha:EditText) {
+    private fun updateTimeLabel(myCalendar: Calendar, editHora: EditText) {
+        val format = "HH:mm"
+        val sdf = SimpleDateFormat(format,Locale.ENGLISH)
+        editHora.setText(sdf.format(myCalendar.time))
+
+    }
+
+    private fun updateLabel(myCalendar: Calendar,editFecha:EditText) {
         val format = "dd-MM-yyyy"
         val sdf = SimpleDateFormat(format,Locale.ENGLISH)
         editFecha.setText(sdf.format(myCalendar.time))
