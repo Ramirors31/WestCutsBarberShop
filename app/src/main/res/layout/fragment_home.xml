@@ -83,17 +83,6 @@
         android:text="Av. Romulo Garza #4000"
         app:layout_constraintLeft_toRightOf="@id/locationIcon"
         app:layout_constraintTop_toBottomOf="@id/phoneNumber" />
-    <TextView
-        android:id="@+id/nuestrosBarberos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/direccionText"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="Conoce a nuestros barberos"
-        android:textSize="32dp"
-        />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

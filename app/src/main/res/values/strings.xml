@@ -51,6 +51,14 @@
     <string name="mascarrillas">Mascarrillas</string>
     <string name="venta">Venta de ceras</string>
     <string name="tel">Telefono: </string>
+
+    <string-array name="opciones">
+        <item>Selecciona uno</item>
+        <item>Juan Ignacio</item>
+        <item>Ernesto Yair</item>
+        <item>José Israel</item>
+        <item>Luis Alonso</item>
+    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

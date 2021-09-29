@@ -41,7 +41,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkB_barba" />
+        app:layout_constraintTop_toBottomOf="@+id/ck_barba" />
 
     <EditText
         android:id="@+id/edit_nombre"
@@ -96,7 +96,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/Fecha"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner_barberos" />
 
     <TextView
         android:id="@+id/textView26"
@@ -106,7 +106,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/hora"
         app:layout_constraintStart_toEndOf="@+id/textView25"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner_barberos" />
 
     <EditText
         android:id="@+id/edit_fecha"
@@ -119,7 +119,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinner_barberos"
         android:layout_width="350dp"
         android:layout_height="30dp"
         android:layout_marginStart="23dp"
@@ -152,7 +152,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edit_fecha" />
 
     <CheckBox
-        android:id="@+id/checkB_normal"
+        android:id="@+id/ck_normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -162,55 +162,44 @@
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
     <CheckBox
-        android:id="@+id/checkB_urbano"
+        android:id="@+id/ck_urbano"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="47dp"
         android:text="@string/corteUrbano"
-        app:layout_constraintStart_toEndOf="@+id/checkB_normal"
+        app:layout_constraintStart_toEndOf="@+id/ck_normal"
         app:layout_constraintTop_toBottomOf="@+id/edit_fecha" />
 
     <CheckBox
-        android:id="@+id/checkB_figuras"
+        android:id="@+id/ck_figuras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
         android:layout_marginTop="50dp"
         android:text="@string/corteFiguras"
-        app:layout_constraintStart_toEndOf="@+id/checkB_urbano"
+        app:layout_constraintStart_toEndOf="@+id/ck_urbano"
         app:layout_constraintTop_toBottomOf="@+id/edit_hora" />
 
     <CheckBox
-        android:id="@+id/checkB_barba"
+        android:id="@+id/ck_barba"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="18dp"
         android:text="@string/barba"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkB_normal" />
+        app:layout_constraintTop_toBottomOf="@+id/ck_normal" />
 
     <CheckBox
-        android:id="@+id/checkB_mascarilla"
+        android:id="@+id/ck_mascarilla"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="61dp"
         android:layout_marginTop="18dp"
         android:text="@string/mascarrillas"
-        app:layout_constraintStart_toEndOf="@+id/checkB_barba"
-        app:layout_constraintTop_toBottomOf="@+id/checkB_urbano" />
-
-    <TextView
-        android:id="@+id/txt_total"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="76dp"
-        android:text="Total"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkB_figuras" />
+        app:layout_constraintStart_toEndOf="@+id/ck_barba"
+        app:layout_constraintTop_toBottomOf="@+id/ck_urbano" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
