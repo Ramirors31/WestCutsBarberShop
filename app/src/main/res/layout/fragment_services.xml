@@ -206,7 +206,7 @@
         android:id="@+id/txt_total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="49dp"
         android:text="@string/total"
         android:textSize="24sp"
