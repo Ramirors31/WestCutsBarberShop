@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "454602186668",
+    "project_id": "west-cuts-barbershop",
+    "storage_bucket": "west-cuts-barbershop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454602186668:android:1691907b2a535dce362409",
+        "android_client_info": {
+          "package_name": "com.example.westcutsbarbershop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454602186668-s8p579jj12oniccvcttgr681k53pg4ua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHeNsVZW-72dZfthgR0D7t_b4PdebFrDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454602186668-s8p579jj12oniccvcttgr681k53pg4ua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

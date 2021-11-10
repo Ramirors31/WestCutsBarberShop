@@ -5,12 +5,14 @@ import android.app.TimePickerDialog
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import com.example.westcutsbarbershop.R
+import com.google.firebase.firestore.FirebaseFirestore
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -21,6 +23,7 @@ import java.util.*
  * create an instance of this fragment.
  */
 class ServicesFragment : Fragment() {
+    private val db = FirebaseFirestore.getInstance()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -70,14 +73,27 @@ class ServicesFragment : Fragment() {
             myCalendar.get(Calendar.MINUTE),
                 false).show()
         }
+        //BOTON PARA AGENDAR LA CITA Y GUARDARLA EN LA BASE DE DATOS
+        val agendarBtn:Button = rootView.findViewById<Button>(R.id.btn_agendar)
+        val userName:EditText = rootView.findViewById<EditText>(R.id.edit_nombre)
+        val phone:EditText = rootView.findViewById<EditText>(R.id.edit_telefono)
+        val hora:EditText = rootView.findViewById<EditText>(R.id.edit_fecha)
+        val barbero:Spinner = rootView.findViewById<Spinner>(R.id.spinner_barberos)
+        val fecha:EditText = rootView.findViewById<EditText>(R.id.edit_fecha)
+        //val datosCita = hashMapOf()
 
 
-
-
-
-        //NOTIFICACION DE SERVICIO AGENDADO
+        //BOTON PARA REGISTRAR UNA CITA EN LA BASE DE DATOS
         val sendButton:Button = rootView.findViewById<Button>(R.id.btn_agendar)
         sendButton.setOnClickListener {
+            db.collection("citas").add(hashMapOf(
+                "nombre" to userName.text.toString(),
+                "telefono" to phone.text.toString(),
+                "fecha" to fecha.text.toString(),
+                "hora" to hora.text.toString(),
+                "barbero" to barbero.selectedItem.toString(),
+                "servicio" to "Corte de pelo clasico"
+            ))
             val message = "Se ha agendado tu servicio"
             Toast.makeText(sendButton.context, message, Toast.LENGTH_SHORT).show()
         }
