@@ -12,7 +12,7 @@ import com.example.westcutsbarbershop.R
 class BarbersAdapter (
     private val context: Context,
     private val dataset: List<Barbers>
-    ): RecyclerView.Adapter<BarbersAdapter.ItemViewHolder>(){
+): RecyclerView.Adapter<BarbersAdapter.ItemViewHolder>(){
     class ItemViewHolder(private val view: View): RecyclerView.ViewHolder(view){
         val barberName: TextView = view.findViewById(R.id.barberName)
         val barberDays: TextView = view.findViewById(R.id.barberDays)
@@ -39,4 +39,3 @@ class BarbersAdapter (
     override fun getItemCount() = dataset.size
 
 }
-

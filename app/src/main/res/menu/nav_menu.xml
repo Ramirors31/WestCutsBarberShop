@@ -17,6 +17,6 @@
     <item
         android:id="@+id/StoreButton"
         android:icon="@drawable/ic_shoping_cart"
-        android:title="Tienda"
+        android:title="Citas"
         />
 </menu>
