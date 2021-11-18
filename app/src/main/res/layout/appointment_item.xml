@@ -26,12 +26,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/appointmentTitle"
+                android:id="@+id/appointmentId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
                 android:textSize="26dp"
-                android:text="Cita Agendada" />
+                android:text="Código Cita:" />
 
             <TextView
                 android:id="@+id/appointmentDay"

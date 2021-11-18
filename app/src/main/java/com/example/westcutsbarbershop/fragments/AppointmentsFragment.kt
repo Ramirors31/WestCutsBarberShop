@@ -35,11 +35,11 @@ class AppointmentsFragment : Fragment() {
         recyclerView.adapter = AppointmentsAdapter(recyclerView.context, dataset)
         recyclerView.setHasFixedSize(true)
 
-        EventChangeListener()
+        eventChangeListener()
         return rootView
     }
 
-    private fun EventChangeListener() {
+    private fun eventChangeListener() {
         db.collection("citas").
                 addSnapshotListener(object : EventListener<QuerySnapshot>{
                     override fun onEvent(

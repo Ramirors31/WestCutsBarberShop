@@ -11,8 +11,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.core.util.toRange
 import com.example.westcutsbarbershop.R
 import com.google.firebase.firestore.FirebaseFirestore
+import io.grpc.KnownLength
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -77,10 +79,9 @@ class ServicesFragment : Fragment() {
         val agendarBtn:Button = rootView.findViewById<Button>(R.id.btn_agendar)
         val userName:EditText = rootView.findViewById<EditText>(R.id.edit_nombre)
         val phone:EditText = rootView.findViewById<EditText>(R.id.edit_telefono)
-        val hora:EditText = rootView.findViewById<EditText>(R.id.edit_fecha)
+        val hora:EditText = rootView.findViewById<EditText>(R.id.edit_hora)
         val barbero:Spinner = rootView.findViewById<Spinner>(R.id.spinner_barberos)
         val fecha:EditText = rootView.findViewById<EditText>(R.id.edit_fecha)
-        //val datosCita = hashMapOf()
 
 
         //BOTON PARA REGISTRAR UNA CITA EN LA BASE DE DATOS
@@ -92,7 +93,8 @@ class ServicesFragment : Fragment() {
                 "fecha" to fecha.text.toString(),
                 "hora" to hora.text.toString(),
                 "barbero" to barbero.selectedItem.toString(),
-                "servicio" to "Corte de pelo clasico"
+                "servicio" to "Corte de pelo clasico",
+                "id" to createId()
             ))
             val message = "Se ha agendado tu servicio"
             Toast.makeText(sendButton.context, message, Toast.LENGTH_SHORT).show()
@@ -116,5 +118,16 @@ class ServicesFragment : Fragment() {
 
     }
 
+    //FUNCION PARA CREAR UN IDENTIFICADOR UNICO PARA LAS CITAS
+    private fun createId(): String{
+        val first = (0..9).random().toString()
+        val second =(0..9).random().toString()
+        val third = (0..9).random().toString()
+        val fourth = (0..9).random().toString()
 
+        return (first + second + third + fourth)
+
+
+    }
 }
+

@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -19,6 +20,9 @@ class AppointmentsAdapter (
         val fecha : TextView = view.findViewById(R.id.appointmentDay)
         val servicio : TextView = view.findViewById(R.id.appointmentService)
         val barbero : TextView = view.findViewById(R.id.appointmentBarber)
+        val codigo: TextView = view.findViewById(R.id.appointmentId)
+        val modificar: Button = view.findViewById(R.id.btnModificar)
+        val cancelar: Button = view.findViewById(R.id.btnCancelar)
 
     }
 
@@ -30,10 +34,20 @@ class AppointmentsAdapter (
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
+        val codigo = item.id.toString()
         holder.hora.text = item.hora.toString()
         holder.fecha.text = item.fecha.toString()
         holder.barbero.text = item.barbero.toString()
         holder.servicio.text = item.servicio.toString()
+        holder.codigo.text =  "Numero de cita:$codigo"
+
+        holder.cancelar.setOnClickListener(){
+
+        }
+
+
+
+
 
     }
 
